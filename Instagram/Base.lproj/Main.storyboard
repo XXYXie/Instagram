@@ -74,5 +74,24 @@
             </objects>
             <point key="canvasLocation" x="767" y="289"/>
         </scene>
+        <!--Submit View Controller-->
+        <scene sceneID="Qwb-CN-hZt">
+            <objects>
+                <viewController id="G19-OM-gji" customClass="SubmitViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rpk-Va-Xhr"/>
+                        <viewControllerLayoutGuide type="bottom" id="2hT-X3-rw9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="08I-Q3-hjr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMp-g9-BCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="289"/>
+        </scene>
     </scenes>
 </document>
