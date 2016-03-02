@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -28,6 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://still-ocean-97478.herokuapp.com/Parse"
             })
         )
+        
+        // Persisting user session
+        // setup parse keys
+        Parse.setApplicationId("Instagram", clientKey: "XXY1128")
+        
+        // check if user is logged in.
+        if PFUser.currentUser() != nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("detailViewController")
+            window?.rootViewController = vc
+        }
+
         return true
     }
 
