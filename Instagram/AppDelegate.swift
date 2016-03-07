@@ -30,13 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Persisting user session
         // setup parse keys
-        Parse.setApplicationId("Instagram", clientKey: "XXY1128")
+        //Parse.setApplicationId("Instagram", clientKey: "XXY1128")
         
         // check if user is logged in.
         if PFUser.currentUser() != nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("detailViewController")
+            let vc = storyboard.instantiateViewControllerWithIdentifier("submitViewController")
             window?.rootViewController = vc
+            //PFUser.logOut()
+            print(PFUser.currentUser())
         }
 
         return true
