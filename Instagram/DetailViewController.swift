@@ -16,6 +16,11 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     var photos: [PFObject]?
     
+ 
+    @IBAction func logout(sender: AnyObject) {
+        PFUser.logOut()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self

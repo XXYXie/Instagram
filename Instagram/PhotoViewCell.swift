@@ -16,7 +16,7 @@ class PhotoViewCell: UITableViewCell {
     
     @IBOutlet weak var caption: UILabel!
     
-    
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
